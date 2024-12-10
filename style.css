@@ -1,0 +1,83 @@
+/* Palette Matrix : noir, vert fluo, et variations */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000; /* Noir */
+    color: #00ff00; /* Vert fluo */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #003300; /* Vert foncé */
+    border-bottom: 3px solid #00ff00;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+nav {
+    background-color: #001a00; /* Vert très foncé */
+    border-bottom: 2px solid #00ff00;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ff00;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #33ff33; /* Vert clair */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #33ff33; /* Vert clair */
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 5px;
+}
+
+.code-block {
+    background-color: #001a00; /* Fond vert très foncé */
+    color: #00ff00;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003300; /* Vert foncé */
+    border-top: 3px solid #00ff00;
+    margin-top: 20px;
+}

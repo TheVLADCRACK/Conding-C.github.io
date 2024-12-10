@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation sur la programmation C avancée">
+    <title>Documentation C Avancée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Programmation C Avancée</h1>
+        <p>Explorez les concepts avancés du langage C.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#pointeurs">Pointeurs</a></li>
+            <li><a href="#fichiers">Gestion de Fichiers</a></li>
+            <li><a href="#multi-threading">Multi-threading</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Le langage C est l'un des langages les plus puissants et performants, largement utilisé pour le développement système, les applications embarquées et bien plus.</p>
+        </section>
+
+        <section id="pointeurs">
+            <h2>Pointeurs</h2>
+            <p>Les pointeurs sont des variables qui stockent l'adresse mémoire d'une autre variable. Ils sont essentiels pour manipuler la mémoire de manière efficace.</p>
+            <pre><code class="code-block">
+int x = 42;
+int *ptr = &x;
+printf("Valeur de x : %d", *ptr);
+            </code></pre>
+        </section>
+
+        <section id="fichiers">
+            <h2>Gestion de Fichiers</h2>
+            <p>En C, la gestion des fichiers se fait via des fonctions comme <code>fopen</code>, <code>fclose</code>, <code>fprintf</code>, etc.</p>
+            <pre><code class="code-block">
+FILE *file = fopen("example.txt", "w");
+if (file != NULL) {
+    fprintf(file, "Bonjour, C !");
+    fclose(file);
+}
+            </code></pre>
+        </section>
+
+        <section id="multi-threading">
+            <h2>Multi-threading</h2>
+            <p>Le multi-threading permet d'exécuter plusieurs tâches simultanément en utilisant des bibliothèques comme <code>pthread</code>.</p>
+            <pre><code class="code-block">
+#include <pthread.h>
+void *routine() {
+    printf("Thread en cours d'exécution.");
+}
+pthread_t thread;
+pthread_create(&thread, NULL, routine, NULL);
+pthread_join(thread, NULL);
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Documentation C Avancée | Thème Matrix</p>
+    </footer>
+</body>
+</html>
