@@ -1,0 +1,9 @@
+# Redirection 301 (permanente)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^https://thevladcrack.github.io/Conding-C.github.io/$ [NC]
+RewriteRule ^(.*)$ http://vladcoding.cm/$1 [L,R=301]
+
+# Redirection 302 (temporaire)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^https://thevladcrack.github.io/Conding-C.github.io/$ [NC]
+RewriteRule ^(.*)$ http://vladcoding.cm/$1 [L,R=302]
