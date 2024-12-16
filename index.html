@@ -3,70 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Documentation sur la programmation C avancée">
-    <title>Documentation C Avancée</title>
+    <title>Documentation Langage C</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Programmation C Avancée</h1>
-        <p>Explorez les concepts avancés du langage C.</p>
+        <h1>Documentation Complète du Langage C</h1>
+        <p>Apprenez le langage C avec des explications claires, des exemples pratiques et des outils interactifs.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#examples">Exemples</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#pointeurs">Pointeurs</a></li>
-            <li><a href="#fichiers">Gestion de Fichiers</a></li>
-            <li><a href="#multi-threading">Multi-threading</a></li>
-        </ul>
-    </nav>
-
+    <!-- Main Content -->
     <main>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>Le langage C est l'un des langages les plus puissants et performants, largement utilisé pour le développement système, les applications embarquées et bien plus.</p>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Bienvenue sur la Documentation C</h2>
+            <p>Le langage C est un langage de programmation puissant et polyvalent. Cette plateforme est conçue pour vous fournir toutes les ressources nécessaires.</p>
+            <button id="get-started">Commencer Maintenant</button>
         </section>
 
-        <section id="pointeurs">
-            <h2>Pointeurs</h2>
-            <p>Les pointeurs sont des variables qui stockent l'adresse mémoire d'une autre variable. Ils sont essentiels pour manipuler la mémoire de manière efficace.</p>
-            <pre><code class="code-block">
-int x = 42;
-int *ptr = &x;
-printf("Valeur de x : %d", *ptr);
-            </code></pre>
+        <!-- Documentation Section -->
+        <section id="documentation">
+            <h2>Documentation</h2>
+            <div class="doc-grid">
+                <div class="doc-item">
+                    <h3>Syntaxe de base</h3>
+                    <p>Découvrez les bases du langage C, y compris la structure des programmes et les conventions.</p>
+                </div>
+                <div class="doc-item">
+                    <h3>Variables et Types</h3>
+                    <p>Apprenez à déclarer, initialiser et utiliser des variables en C.</p>
+                </div>
+                <div class="doc-item">
+                    <h3>Structures de Contrôle</h3>
+                    <p>Explorez les boucles, les conditions et autres structures de contrôle.</p>
+                </div>
+                <div class="doc-item">
+                    <h3>Pointeurs</h3>
+                    <p>Comprenez les pointeurs, l'un des concepts clés en C.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="fichiers">
-            <h2>Gestion de Fichiers</h2>
-            <p>En C, la gestion des fichiers se fait via des fonctions comme <code>fopen</code>, <code>fclose</code>, <code>fprintf</code>, etc.</p>
-            <pre><code class="code-block">
-FILE *file = fopen("example.txt", "w");
-if (file != NULL) {
-    fprintf(file, "Bonjour, C !");
-    fclose(file);
-}
-            </code></pre>
+        <!-- Examples Section -->
+        <section id="examples">
+            <h2>Exemples Pratiques</h2>
+            <p>Testez du code en temps réel !</p>
+            <textarea id="code-editor">// Écrivez votre code ici...</textarea>
+            <button id="run-code">Exécuter</button>
+            <pre id="output"></pre>
         </section>
 
-        <section id="multi-threading">
-            <h2>Multi-threading</h2>
-            <p>Le multi-threading permet d'exécuter plusieurs tâches simultanément en utilisant des bibliothèques comme <code>pthread</code>.</p>
-            <pre><code class="code-block">
-#include <pthread.h>
-void *routine() {
-    printf("Thread en cours d'exécution.");
-}
-pthread_t thread;
-pthread_create(&thread, NULL, routine, NULL);
-pthread_join(thread, NULL);
-            </code></pre>
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>Qu'est-ce que le langage C ?</h3>
+                <p>Le C est un langage de programmation généraliste créé en 1972. Il est utilisé pour les systèmes d'exploitation, les applications embarquées et bien plus.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Comment démarrer en C ?</h3>
+                <p>Installez un compilateur comme GCC, utilisez un IDE comme Code::Blocks, et commencez avec un tutoriel de base.</p>
+            </div>
+            <form id="faq-form">
+                <h3>Posez votre question</h3>
+                <input type="text" placeholder="Votre question..." required>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form id="contact-form">
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Votre nom" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Votre email" required>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>© 2024 Documentation C Avancée | Thème Matrix</p>
+        <p>© 2024 Documentation Langage C | Conçu avec passion</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
